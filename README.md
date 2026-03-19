@@ -1,17 +1,17 @@
 # Non-Invasive-Neonatal-glucose-monitor-NIR
-This project focuses on the development of a wearable, non-invasive device for monitoring neonatal glucose levels using Near-Infrared (NIR) spectroscopy. The system aims to reduce the need for frequent blood sampling in newborns by providing continuous, painless glucose estimation through optical sensing and signal processing.
+This project focuses on the development of a non-invasive prototype for monitoring neonatal glucose levels using Near-Infrared (NIR) spectroscopy. The system aims to reduce the need for frequent blood sampling in newborns by providing continuous, painless glucose estimation through optical sensing and signal processing.
 
 
 ## Proposed Solution
 
 Neonatal hypoglycemia is a critical condition that requires continuous and safe monitoring. Conventional invasive methods such as blood pricking or enzymatic test strips are not suitable for neonates due to pain, risk of infection, and difficulty in frequent sampling. 
 
-To address these limitations, this project proposes a wearable non-invasive glucose monitoring system based on Near-Infrared (NIR) spectroscopy, where variations in light absorption and reflection are converted into electrical signals that correlate with glucose concentration.
+To address these limitations, this project proposes a prototype non-invasive glucose monitoring system based on Near-Infrared (NIR) spectroscopy, where variations in light absorption and reflection are converted into electrical signals that correlate with glucose concentration.
 
 
 ## Optical Source and Detection Setup
 
-An NIR LED is used as the light source, emitting wavelengths sensitive to glucose absorption. The emitted light penetrates biological tissue, where part of it is absorbed and the remaining portion is reflected. A BPW34 photodiode captures the reflected light intensity.
+An NIR LED is used as the light source, emitting infrared light sensitive to glucose absorption. The emitted light penetrates biological tissue, where part of it is absorbed and the remaining portion is reflected. A BPW34 photodiode captures the reflected light intensity.
 
 
 ## Analog Signal Conditioning
@@ -41,13 +41,11 @@ where m and b are experimentally derived constants obtained using phantom tissue
 
 ## Real-Time Monitoring
 
-The processed glucose values are displayed in real time through the Arduino serial monitor and can be extended to a graphical interface for clinical monitoring applications.
-
+The processed glucose values are displayed in real time through the Arduino serial monitor.
 
 ## Results and Validation
 
-The system was tested using tissue-mimicking phantom models and controlled optical setups. Calibration curves and time-series analysis confirmed a measurable relationship between optical signal intensity and glucose levels. Validation experiments were conducted on adult volunteers and phantom models only to ensure ethical compliance.
-
+The developed prototype was evaluated using controlled optical setups and experimental trials conducted on adult volunteers rather than neonates. Calibration curves and time-series signal analysis demonstrated a measurable relationship between optical signal intensity and glucose levels. This approach ensured safe preliminary validation of the system while avoiding direct testing on neonatal subjects during the initial development stage.
 
 ## Hardware Components
 
@@ -58,8 +56,3 @@ The system was tested using tissue-mimicking phantom models and controlled optic
 - Arduino Microcontroller
 
 
-## Key Features
-- Non-invasive glucose monitoring
-- Wearable neonatal-friendly design
-- Continuous real-time measurement
-- Noise reduction using differential optical sampling
