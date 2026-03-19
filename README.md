@@ -36,14 +36,14 @@ The measured voltage is correlated with glucose concentration using a linear cal
 
 Glucose = m × ADC + b
 
-where m and b are experimentally derived constants obtained using phantom tissue models.
+where m and b are experimentally derived constants obtained through calibration experiments conducted on adult subjects using reference glucose measurements.
 
 
 ## Real-Time Monitoring
 
 The processed glucose values are displayed in real time through the Arduino serial monitor.
 
-## Results and Validation
+## Results
 
 The developed prototype was evaluated using controlled optical setups and experimental trials conducted on adult volunteers rather than neonates. Calibration curves and time-series signal analysis demonstrated a measurable relationship between optical signal intensity and glucose levels. This approach ensured safe preliminary validation of the system while avoiding direct testing on neonatal subjects during the initial development stage.
 
